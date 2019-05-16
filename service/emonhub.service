@@ -12,7 +12,7 @@ ExecStart=/usr/share/emonhub/emonhub.py --config-file=/etc/emonhub/emonhub.conf 
 PermissionsStartOnly=true
 ExecStartPre=-/bin/mkdir -p /var/log/emonhub/
 ExecStartPre=-/bin/chgrp -R emonhub /var/log/emonhub/
-ExecStartPre=-/bin/chmod -R 755 /var/log/emonhub/
+ExecStartPre=-/bin/chmod -R 777 /var/log/emonhub/
 
 Type=simple
 Restart=always
